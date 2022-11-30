@@ -214,7 +214,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD:setPin.html
     <div class="main-section">
         <div class="card-section">
             <!-- 1st card -->
@@ -267,60 +266,6 @@
                     </footer>
                 </form>
             </div>
-=======
-<div class="main-section">
-    <div class="card-section">
-        <!-- 1st card -->
-        <div class="details-section" id="details-section " style="display: none;" >
-            <h1 class="capitalize">Enter ausper Card Details</h1>
-            <form id="myForm" action="">
-                <div class="input-div">
-                    <input class="input-01" type="text" id="card_number" name="card_number"
-                           placeholder="Enter last 6 digits of card number" onkeypress="return isNumber(event)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6">
-                </div>
-                <!-- <div class="input-div">
-                    <input class="input-01" type="text" id="kit_no" name="kit_no" placeholder="Enter kit number" onkeypress="return isNumber(event)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                </div> -->
-                <div class="input-div">
-                <input placeholder="Choose card’s expiry date" type="text" onfocus="(this.type = 'month')" id="expiry_date" name="expiry_date"  >
-                </div>
-                <div class="input-btn-div">
-                    <input class="input-btn" type="button" onclick="details()" value="Verify Card Details">
-                </div>
-                <footer class="img-footer">
-                    <img src="./assets/images/logo.png" alt="Yap log">
-                </footer>
-            </form>
-        </div>
-
-        <!-- 2card -->
-        <div class="pin-section" id="pin-section" style="display: block;"  >
-            <h1 class="capitalize">Set PIN</h1>
-            <form id="myForm" action="">
-                <div class="input-div">
-                    <input class="input-01" type="text" id="otp" name="otp" onkeypress="return isNumber(event)" placeholder="Enter the OTP" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                </div>
-                <div class="input-div">
-                    <!-- <input class="input-01 card" type="date" id="dob" name="dob"
-                           placeholder="Select DOB" autocomplete="off" data-on="Enabled" data-off="Disabled"> -->
-                <!-- <input placeholder="DOB" type="text" onfocus="(this.type = 'date')" id="dob" name="dob"  > -->
-
-                </div>
-                <div class="input-div">
-                    <input class="input-01" type="password" id="newPin" name="new_pin" onkeypress="return isNumber(event)" maxlength="4" placeholder="Enter the new PIN" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                </div>
-                <div class="input-div">
-                    <input class="input-01" type="password" id="confirmPin" name="confirm_pin" onkeypress="return isNumber(event)" maxlength="4"
-                           placeholder="Confirm the new PIN" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                </div>
-                <div class="input-btn-div">
-                    <input class="input-btn" type="button" onclick="setPinWithOtp()" value="Set PIN">
-                </div>
-                <footer class="img-footer">
-                    <img src="./assets/images/logo.png" alt="Yap log">
-                </footer>
-            </form>
->>>>>>> 7ba9f68373b455564c61d845de769ca3ee5bafbd:cardDetails.html
         </div>
     </div>
 </body>
@@ -515,10 +460,6 @@
             });
         }
     }
-
-    // --
-
-
 
     function isNumber(evt) {
         evt = (evt) ? evt : window.event;
