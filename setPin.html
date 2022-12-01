@@ -165,9 +165,10 @@
       #dob {
         border: none;
         background: #e6e6e6;
-        /* display: block; */
+        display: block;
         padding: 15px 20px;
         width: 74%;
+        min-width:95%;
         outline: none;
         color: #666666;
         height: 20px;
@@ -175,10 +176,7 @@
         font-family: "Gotham-Light";
         font-size: 15px;
         transition: 250ms width ease, 250ms border-color ease;
-        display:flex;
-        display:-webkit-flex;
-        flex: 1 0 0;
-        -webkit-flex: 1 0 0;
+      
         
       }
 
@@ -273,7 +271,7 @@
               <!-- <input class="input-01 card" type="date" id="dob" name="dob"
                            placeholder="Select DOB" autocomplete="off" data-on="Enabled" data-off="Disabled"> -->
               <input
-                class="input-01"
+                
                 placeholder="Select the DOB"
                 type="text"
                 onfocus="(this.type = 'date')"
