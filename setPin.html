@@ -164,25 +164,31 @@
       #expiry_date,
       #dob {
         border: none;
-        /* background: #e6e6e6; */
-        background-color: #ffe10f;
+        background: #e6e6e6;
         display: block;
         padding: 15px 20px;
         width: 74%;
-        min-width:80%;
         outline: none;
         color: #666666;
-        height: 40px;
-        min-height: 20px;
-
+        height: 20px;
         border-radius: 25px;
         font-family: "Gotham-Light";
         font-size: 15px;
         transition: 250ms width ease, 250ms border-color ease;
-    
-      
-        
       }
+
+      input[type="date"] {
+        display: block;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        min-height: 1.1em;
+      }
+      input [type= "date" ]::after{
+       
+         content: attr(placeholder);
+      }
+
+
 
       @media (min-width: 320px) {
         .capitalize {
@@ -234,7 +240,6 @@
             </div>
             <div class="input-div">
               <input
-                class="input-01"
                 placeholder="Choose card’s expiry date"
                 type="text"
                 onfocus="(this.type = 'month')"
@@ -272,13 +277,11 @@
               />
             </div>
             <div class="input-div">
-              <input class="input-01 card" type="date"  name="dob"
+              <input class="input-01 card" type="date" id="dob" name="dob"
                            placeholder="Select DOB" autocomplete="off" data-on="Enabled" data-off="Disabled">
               <!-- <input
-                
                 placeholder="Select the DOB"
-                type="text"
-                onfocus="(this.type = 'date')"
+                type="date"
                 id="dob"
                 name="dob"
               /> -->
